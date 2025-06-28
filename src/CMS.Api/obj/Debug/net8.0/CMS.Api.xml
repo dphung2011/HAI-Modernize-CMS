@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMS.Api</name>
+    </assembly>
+    <members>
+        <member name="T:CMS.Api.Controllers.AuthController">
+            <summary>
+            Controller for handling authentication operations
+            </summary>
+        </member>
+        <member name="M:CMS.Api.Controllers.AuthController.#ctor(CMS.Application.Interfaces.IAuthService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CMS.Api.Controllers.AuthController"/> class.
+            </summary>
+            <param name="authService">The authentication service.</param>
+        </member>
+        <member name="M:CMS.Api.Controllers.AuthController.Login(CMS.Application.DTOs.LoginDto)">
+            <summary>
+            Authenticates a user and returns a JWT token
+            </summary>
+            <param name="loginDto">The login credentials</param>
+            <returns>A JWT token if authentication is successful</returns>
+            <response code="200">Returns the JWT token</response>
+            <response code="401">If the credentials are invalid</response>
+        </member>
+        <member name="M:CMS.Api.Controllers.AuthController.LoginFaculty(CMS.Application.DTOs.LoginDto)">
+            <summary>
+            Authenticates a faculty member and returns a JWT token
+            </summary>
+            <param name="loginDto">The login credentials</param>
+            <returns>A JWT token if authentication is successful</returns>
+            <response code="200">Returns the JWT token</response>
+            <response code="401">If the credentials are invalid</response>
+        </member>
+        <member name="T:CMS.Api.Controllers.StudentsController">
+            <summary>
+            Controller for managing students
+            </summary>
+        </member>
+        <member name="M:CMS.Api.Controllers.StudentsController.#ctor(CMS.Application.Interfaces.IStudentService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CMS.Api.Controllers.StudentsController"/> class.
+            </summary>
+            <param name="studentService">The student service.</param>
+        </member>
+        <member name="M:CMS.Api.Controllers.StudentsController.GetAll">
+            <summary>
+            Gets all students
+            </summary>
+            <returns>A list of all students</returns>
+            <response code="200">Returns the list of students</response>
+            <response code="401">If the user is not authenticated</response>
+        </member>
+        <member name="M:CMS.Api.Controllers.StudentsController.GetById(System.Int32)">
+            <summary>
+            Gets a student by ID
+            </summary>
+            <param name="id">The student ID</param>
+            <returns>The student with the specified ID</returns>
+            <response code="200">Returns the student</response>
+            <response code="404">If the student does not exist</response>
+            <response code="401">If the user is not authenticated</response>
+        </member>
+        <member name="M:CMS.Api.Controllers.StudentsController.GetByCourse(System.String)">
+            <summary>
+            Gets students by course name
+            </summary>
+            <param name="courseName">The course name</param>
+            <returns>A list of students enrolled in the specified course</returns>
+            <response code="200">Returns the list of students</response>
+            <response code="401">If the user is not authenticated</response>
+        </member>
+        <member name="M:CMS.Api.Controllers.StudentsController.Create(CMS.Application.DTOs.CreateStudentDto)">
+            <summary>
+            Creates a new student
+            </summary>
+            <param name="createStudentDto">The student to create</param>
+            <returns>The created student</returns>
+            <response code="201">Returns the newly created student</response>
+            <response code="400">If the student data is invalid</response>
+            <response code="401">If the user is not authenticated</response>
+        </member>
+        <member name="M:CMS.Api.Controllers.StudentsController.Update(System.Int32,CMS.Application.DTOs.UpdateStudentDto)">
+            <summary>
+            Updates an existing student
+            </summary>
+            <param name="id">The student ID</param>
+            <param name="updateStudentDto">The updated student data</param>
+            <returns>No content</returns>
+            <response code="204">If the student was successfully updated</response>
+            <response code="400">If the student data is invalid</response>
+            <response code="404">If the student does not exist</response>
+            <response code="401">If the user is not authenticated</response>
+        </member>
+        <member name="M:CMS.Api.Controllers.StudentsController.UpdateCourse(System.Int32,System.String)">
+            <summary>
+            Updates a student's course
+            </summary>
+            <param name="id">The student ID</param>
+            <param name="courseName">The new course name</param>
+            <returns>No content</returns>
+            <response code="204">If the student's course was successfully updated</response>
+            <response code="400">If the course name is invalid</response>
+            <response code="404">If the student does not exist</response>
+            <response code="401">If the user is not authenticated</response>
+        </member>
+        <member name="M:CMS.Api.Controllers.StudentsController.Delete(System.Int32)">
+            <summary>
+            Deletes a student
+            </summary>
+            <param name="id">The student ID</param>
+            <returns>No content</returns>
+            <response code="204">If the student was successfully deleted</response>
+            <response code="404">If the student does not exist</response>
+            <response code="401">If the user is not authenticated</response>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,355 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Api/CMS.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Api/CMS.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Api/CMS.Api.csproj",
+        "projectName": "CMS.Api",
+        "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Api/CMS.Api.csproj",
+        "packagesPath": "/Users/dannyp/.nuget/packages/",
+        "outputPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dannyp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Application/CMS.Application.csproj": {
+                "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Application/CMS.Application.csproj"
+              },
+              "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Infrastructure/CMS.Infrastructure.csproj": {
+                "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Infrastructure/CMS.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Application/CMS.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Application/CMS.Application.csproj",
+        "projectName": "CMS.Application",
+        "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Application/CMS.Application.csproj",
+        "packagesPath": "/Users/dannyp/.nuget/packages/",
+        "outputPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dannyp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Domain/CMS.Domain.csproj": {
+                "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Domain/CMS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.8.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Domain/CMS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Domain/CMS.Domain.csproj",
+        "projectName": "CMS.Domain",
+        "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Domain/CMS.Domain.csproj",
+        "packagesPath": "/Users/dannyp/.nuget/packages/",
+        "outputPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dannyp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Infrastructure/CMS.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Infrastructure/CMS.Infrastructure.csproj",
+        "projectName": "CMS.Infrastructure",
+        "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Infrastructure/CMS.Infrastructure.csproj",
+        "packagesPath": "/Users/dannyp/.nuget/packages/",
+        "outputPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dannyp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Application/CMS.Application.csproj": {
+                "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Application/CMS.Application.csproj"
+              },
+              "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Domain/CMS.Domain.csproj": {
+                "projectPath": "/Users/dannyp/Documents/HAI/HAI-Enablement/HAI-CMS-Modernize/src/CMS.Domain/CMS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
