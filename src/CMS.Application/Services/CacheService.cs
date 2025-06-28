@@ -37,7 +37,7 @@ public class CacheService : ICacheService
         _memoryCache.Remove(key);
     }
 
-    public bool TryGetValue<T>(string key, out T value)
+    public bool TryGetValue<T>(string key, out T? value)
     {
         return _memoryCache.TryGetValue(key, out value);
     }

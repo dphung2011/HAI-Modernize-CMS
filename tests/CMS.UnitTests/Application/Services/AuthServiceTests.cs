@@ -101,7 +101,7 @@ public class AuthServiceTests
             Password = "password"
         };
 
-        _mockUserRepository.Setup(x => x.GetByUsernameAsync("nonexistent")).ReturnsAsync((User)null);
+        _mockUserRepository.Setup(x => x.GetByUsernameAsync("nonexistent")).ReturnsAsync((User?)null);
 
         // Act & Assert
         await Assert.ThrowsAsync<UnauthorizedAccessException>(async () =>
